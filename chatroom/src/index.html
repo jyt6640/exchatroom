@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>채팅방</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="user-container">
+      <label for="nickname">대화명</label>
+      <input type="text" id="nickname">
+    </div>
+
+    <div class="display-container">
+      <ul class="chatting-list">
+      </ul>
+    </div>
+
+    <div class="input-container">
+      <span>
+        <input type="text" class="chatting-input">
+        <input type="file" id="imageInput">
+        <button class="send-button" id="textSend">전송</button>
+        <button class="send-button" id="imageSend">이미지 전송</button>
+      </span>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./js/chat.js"></script>
+</body>
+</html>
